@@ -74,3 +74,29 @@ for (i = 0; i < fLen; i++) {
 }
 text += "</ul>";
 document.getElementById("loop-array").innerHTML = text;
+
+/****************************************************
+*                Associative Arrays                 *
+****************************************************/
+var person2 = [];
+person2[0] = "John";
+person2[1] = "Doe";
+person2[2] = 46;
+document.getElementById("assoc-array").innerHTML = person2;
+
+/****************************************************
+*              How to Recognize an Array            *
+****************************************************/
+var fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("typeof-array").innerHTML = typeof fruits3;
+
+// Solution 1:
+document.getElementById("is-array").innerHTML = Array.isArray(fruits3);
+
+// Solution 2:
+function isArray(x) {
+    return x.constructor.toString().indexOf("is-array2") > -1;
+}
+
+// Solution 3:
+document.getElementById("inst-array").innerHTML = fruits3 instanceof Array;
