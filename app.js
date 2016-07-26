@@ -41,3 +41,14 @@ document.getElementById("object1").innerHTML = person1.firstName;
 ****************************************************/
 var fruits = ["Banana", "Orange", "Apple", "Mango" ];
 document.getElementById("fruits").innerHTML = fruits.length;
+
+/****************************************************
+*               Adding Array Elements               *
+****************************************************/
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("add-array").innerHTML = fruits;
+
+function addArray() {
+  fruits.push("Lemon");
+  document.getElementById("add-array").innerHTML = fruits;
+}
