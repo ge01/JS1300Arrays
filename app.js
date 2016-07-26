@@ -35,3 +35,9 @@ var person1 = {
 };
 document.getElementById("object").innerHTML = person1["firstName"];
 document.getElementById("object1").innerHTML = person1.firstName;
+
+/****************************************************
+*                The length Property                *
+****************************************************/
+var fruits = ["Banana", "Orange", "Apple", "Mango" ];
+document.getElementById("fruits").innerHTML = fruits.length;
