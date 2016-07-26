@@ -52,3 +52,11 @@ function addArray() {
   fruits.push("Lemon");
   document.getElementById("add-array").innerHTML = fruits;
 }
+
+var fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("add-with-length").innerHTML = fruits1;
+
+function addWithLength() {
+  fruits1[fruits1.length] = "Lemon";
+  document.getElementById("add-with-length").innerHTML = fruits1;
+}
