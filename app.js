@@ -60,3 +60,17 @@ function addWithLength() {
   fruits1[fruits1.length] = "Lemon";
   document.getElementById("add-with-length").innerHTML = fruits1;
 }
+
+/****************************************************
+*              Looping Array Elements               *
+****************************************************/
+var fruits2, text, fLen, i;
+
+fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+fLen = fruits.length;
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+  text += "<li>" + fruits2[i] + "</li>";
+}
+text += "</ul>";
+document.getElementById("loop-array").innerHTML = text;
